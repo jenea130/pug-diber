@@ -378,6 +378,7 @@ input[type="submit"]:disabled {
   align-items: center;
   justify-content: center;
   height: 10rem;
+  z-index: 5;
 }
 
 @media screen and (max-width: 992px) {
@@ -429,6 +430,70 @@ input[type="submit"]:disabled {
 
 .header__social svg {
   fill: var(--accent);
+}
+
+.home-intro {
+  position: relative;
+  height: 90.4rem;
+}
+
+.home-intro__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.home-intro__content {
+  position: relative;
+  top: 33.4rem;
+  left: 23.8rem;
+  color: white;
+  z-index: 3;
+}
+
+.home-intro__title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.home-intro__text {
+  margin-bottom: 6.4rem;
+  font-size: 3rem;
+  line-height: normal;
+}
+
+.home-intro__link {
+  color: var(--accent);
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.home-intro__icon {
+  position: relative;
+  display: inline-block;
+  top: 0.5rem;
+  left: 1rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.home-intro__arrow {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.5rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  transform: rotate(45deg);
 }
 
 /*# sourceMappingURL=my.css.map */

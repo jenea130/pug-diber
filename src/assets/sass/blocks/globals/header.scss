@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     height: 10rem;
+    z-index: 5;
     @media screen and (max-width: 992px) {
       height: 7rem;
     }
