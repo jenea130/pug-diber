@@ -3,3 +3,8 @@
 @import "partials/mixins";
 @import "../libs/slick/slick/slick.scss";
 @import "partials/base";
+
+// globals
+@import "blocks/globals/sandwich";
+@import "blocks/globals/menu";
+@import "blocks/globals/header";

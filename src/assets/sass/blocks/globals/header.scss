@@ -1,0 +1,43 @@
+.header {
+  background: #000;
+  &__wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    @media screen and (max-width: 992px) {
+      height: 7rem;
+    }
+    @media screen and (max-width: 768px) {
+      justify-content: space-between;
+    }
+  }
+  &__logo {
+    position: absolute;
+    top: 2.2rem;
+    @media screen and (max-width: 992px) {
+      width: 12rem;
+      top: 1.2rem;
+    }
+  }
+  &__social {
+    position: absolute;
+    right: 0;
+    @media screen and (max-width: 768px) {
+      right: 7rem;
+    }
+    a {
+      padding: 0 1.2rem;
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+    svg {
+      fill: var(--accent);
+    }
+  }
+}
