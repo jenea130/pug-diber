@@ -1,43 +1,29 @@
-.craft-beers {
-    margin-bottom: 4.7rem;
-
+.home-cards {
+  margin-bottom: 7rem;
   &__wrap {
-    border: 2px solid var(--accent);
     display: flex;
-    @media screen and (max-width: 1200px) {
+    flex-wrap: wrap;
+    row-gap: 3.4rem;
+    margin: 0 -1.7rem;
+    @media screen and (max-width: 576px) {
         display: block;
     }
   }
-  &__content {
+  &__card {
     position: relative;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    padding: 8.8rem 14rem 5.4rem 4rem;
-    z-index: 2;
-    height: 58.5rem;
+    flex: 0 0 calc(100% / 4 - 3.4rem);
+    margin: 0 1.7rem;
+    border: 2px solid var(--accent);
     @media screen and (max-width: 1200px) {
-        margin-bottom: 4rem;
-        padding: 3rem 2rem 5.4rem 2rem;
+      flex: 0 0 calc(100% / 2 - 3.4rem);
     }
     @media screen and (max-width: 576px) {
-        height: auto;        
-        padding-bottom: 2rem;
-    }
-  }
-  &__title {
-    margin-bottom: 1.6rem;
-  }
-  &__text {
-    margin-bottom: auto;
-    @media screen and (max-width: 576px) {
-        margin-bottom: 3rem;
+        margin-bottom: 3.4rem;
     }
   }
   &__img {
-    flex: 1;
     position: relative;
-    height: 58.5rem;
+    height: 50rem;
     img {
       position: absolute;
       top: 0;
@@ -46,6 +32,11 @@
       height: 100%;
       object-fit: cover;
     }
+  }
+  &__body {
+    position: absolute;
+    left: 2.4rem;
+    bottom: 2.3rem;
   }
 
   &__link {
@@ -72,14 +63,5 @@
     border-top: 2px solid black;
     border-right: 2px solid black;
     transform: rotate(45deg);
-  }
-  &__picture {
-    position: absolute;
-    left: 30rem;
-    bottom: 0;
-    z-index: -1;
-    @media screen and (max-width: 576px) {
-        display: none;
-    }
   }
 }
