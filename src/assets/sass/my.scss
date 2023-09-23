@@ -4,6 +4,9 @@
 @import "../libs/slick/slick/slick.scss";
 @import "partials/base";
 
+// mixins
+@import "blocks/mixins/link";
+
 // globals
 @import "blocks/globals/sandwich";
 @import "blocks/globals/menu";

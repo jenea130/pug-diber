@@ -1,3 +1,8 @@
 mixin icon(icon, location)
   svg(class="" + icon)
     use(xlink:href="#" + location )
+
+mixin link(text, href = "#")
+  a(href=href).link= text
+      .link__icon
+          .link__arrow

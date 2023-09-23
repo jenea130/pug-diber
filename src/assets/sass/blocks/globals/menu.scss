@@ -65,7 +65,8 @@
         }
       }
     }
-    &__link {
+    &__link,
+    &:active {
       color: white;
       font-size: 2.4rem;
     }

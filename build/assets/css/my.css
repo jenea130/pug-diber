@@ -234,6 +234,34 @@ input[type="submit"]:disabled {
   opacity: 0.6 !important;
 }
 
+.link {
+  color: var(--accent);
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.link__icon {
+  position: relative;
+  display: inline-block;
+  top: 0.5rem;
+  left: 1rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.link__arrow {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.5rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  transform: rotate(45deg);
+}
+
 .sandwich-wrap {
   display: none;
   padding: 18px 10px;
@@ -377,7 +405,7 @@ input[type="submit"]:disabled {
   .menu__list li:first-child, .menu__list li:nth-child(3), .menu__list li:nth-child(4), .menu__list li:last-child {
     padding: 0 0 4.5rem 0;
   }
-  .menu__link {
+  .menu__link, .menu:active {
     color: white;
     font-size: 2.4rem;
   }
@@ -887,13 +915,6 @@ input[type="submit"]:disabled {
   border-top: 2px solid black;
   border-right: 2px solid black;
   transform: rotate(45deg);
-}
-
-@media screen and (max-width: 992px) {
-  .home-intro {
-    -o-object-position: right;
-    object-position: right;
-  }
 }
 
 .craft-beers {
