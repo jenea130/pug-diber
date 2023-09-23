@@ -1,0 +1,120 @@
+.form {
+  padding: 7.4rem 6.5rem 6.6rem 6.5rem;
+  @media screen and (max-width: 768px) {
+    padding-top: 5rem;
+  }
+  @media screen and (max-width: 576px) {
+    padding: 5rem 5rem 5rem 5rem;
+  }
+  @media screen and (max-width: 450px) {
+    padding: 4rem 3rem 4rem 3rem;
+  }
+  &__title {
+    margin-bottom: 5.7rem;
+    font-weight: normal;
+    color: var(--accent);
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    margin-bottom: 2rem;
+    padding: 2rem 2rem 2rem 0;
+    font-size: 2rem;
+    color: white;
+    background: black;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px dotted white;
+  }
+  textarea {
+    padding: 2rem 2rem 2rem 0;
+    margin-bottom: 3rem;
+    height: 7rem;
+    resize: none;
+  }
+  &__group label {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.12rem;
+    text-transform: uppercase;
+    color: white;
+  }
+  &__wrap {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 450px) {
+      display: block;
+    }
+  }
+
+  &__btn {
+    margin-right: 3rem;
+    padding: 0.5rem 4rem;
+    min-height: 6rem;
+    background: var(--accent);
+    color: #000;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    outline: none;
+    &:hover {
+      background: #004c72;
+      color: white;
+    }
+    @media screen and (max-width: 450px) {
+      margin-bottom: 2rem;
+    }
+  }
+  &__checkbox {
+    display: none;
+  }
+  &__checkbox:checked + label:after {
+    opacity: 1;
+  }
+  &__privacy label {
+    position: relative;
+    padding-left: 3rem;
+    display: block;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1;
+    cursor: pointer;
+  }
+  &__privacy label::before {
+    content: "";
+    position: absolute;
+    top: -0.1rem;
+    // top: 50%;
+    left: 0;
+    width: 1.7rem;
+    height: 1.7rem;
+    border: 1px solid white;
+    border-radius: 0.4rem;
+    background: black;
+  }
+
+  &__privacy label::after {
+    content: "";
+    position: absolute;
+    top: 0.3rem;
+    left: 0.3rem;
+    width: 1.2rem;
+    height: 0.8rem;
+    background: url("../i/svg/icon-check.svg") no-repeat center;
+    opacity: 0;
+    transition: all 0.4s;
+    @media screen and (max-width: 1200px) {
+      top: 0.2rem;
+      left: 0.3rem;
+      width: 1.2rem;
+      height: 1rem;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.form
+    h2.form__title.title Scrivici
+    form(action="") 
+        .form__group
+            label(for="name") Nome
+            input(type="text" name="name")
+        .form__group
+            label(for="email") Email
+            input(type="email" name="email")
+        .form__group
+            label(for="item") Oggetto
+            input(type="text" name="item")
+        .form__group
+            label(for="message") Messaggio
+            textarea(type="text" name="message")
+        .form__wrap
+            button.form__btn Invia
+            .form__privacy
+                input#checkbox.form__checkbox(type='checkbox')
+                label(for='checkbox') Cliccando su invia dichiari di aver preso visione e di accettare la nostra privacy policy

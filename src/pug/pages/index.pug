@@ -1,17 +1,23 @@
 extends template
 
 block css
+	link(rel="stylesheet" type="text/css" href="assets/libs/leaflet/leaflet.css")
 	link(rel="stylesheet" type="text/css" href="assets/css/my.css")
 
 block title
 	title Main
 
 block content
+	include ../includes/mixins
 	include ../globals/header
 	include ../blocks/home/home-intro
 	include ../blocks/home/craft-beers
 	include ../blocks/home/home-cards
 	include ../blocks/home/home-services
 
+	include ../globals/main-footer
+	include ../globals/footer-bottom
+
 block scripts
+	script(src="assets/libs/leaflet/leaflet.js")
 	script(src="assets/js/dist/webpack.js")
