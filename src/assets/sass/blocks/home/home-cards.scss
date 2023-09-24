@@ -41,30 +41,4 @@
   &__label {
     font-weight: 400;
   }
-
-  &__link {
-    color: var(--accent);
-    font-size: 1.6rem;
-    cursor: pointer;
-  }
-  &__icon {
-    position: relative;
-    display: inline-block;
-    top: 0.5rem;
-    left: 1rem;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    background: var(--accent);
-  }
-  &__arrow {
-    position: absolute;
-    top: 0.6rem;
-    left: 0.5rem;
-    width: 0.7rem;
-    height: 0.7rem;
-    border-top: 2px solid black;
-    border-right: 2px solid black;
-    transform: rotate(45deg);
-  }
 }
