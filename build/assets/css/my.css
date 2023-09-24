@@ -1214,4 +1214,26 @@ input[type="submit"]:disabled {
   font-weight: 400;
 }
 
+.about-intro {
+  margin-bottom: 3.5rem;
+  position: relative;
+  height: 72.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .about-intro {
+    height: 50rem;
+  }
+}
+
+.about-intro img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 /*# sourceMappingURL=my.css.map */
