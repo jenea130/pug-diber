@@ -219,6 +219,10 @@ p {
   color: #fff;
 }
 
+.text p {
+  margin-bottom: 1rem;
+}
+
 .hidden {
   display: none;
 }
@@ -1164,6 +1168,50 @@ input[type="submit"]:disabled {
   font-size: 3rem;
   font-weight: 700;
   line-height: normal;
+}
+
+.services-cards {
+  margin-bottom: 3.3rem;
+}
+
+.services-cards__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 3.6rem;
+  margin: 0 -1.9rem;
+}
+
+@media screen and (max-width: 768px) {
+  .services-cards__wrap {
+    display: block;
+  }
+}
+
+.services-cards__item {
+  margin: 0 1.9rem;
+  flex: 0 0 calc(50% - 3.8rem);
+  border: 2px solid var(--accent);
+}
+
+@media screen and (max-width: 768px) {
+  .services-cards__item {
+    margin-bottom: 3rem;
+  }
+}
+
+.services-cards__body {
+  padding: 3.3rem 3.5rem 3.2rem 3.6rem;
+}
+
+@media screen and (max-width: 992px) {
+  .services-cards__body {
+    padding: 2.3rem 2.5rem 2.2rem 2.6rem;
+  }
+}
+
+.services-cards__title {
+  margin-bottom: 2.2rem;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=my.css.map */
