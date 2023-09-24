@@ -1,0 +1,33 @@
+.beers {
+    margin-top: 9.1rem;
+    margin-bottom: 9.9rem;
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 6.6rem;
+        margin: 0 -1.5rem;
+    }
+    &__item {
+        margin: 0 1.5rem;
+        flex: 1 1 calc(25% - 3rem);
+    }
+    &__img {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+        width: 43.4rem;
+        height: 43.4rem;
+        border: 2px solid var(--accent);
+        &--white {
+            background: white;
+        }
+        &--blue {
+            background: #003072;
+        }
+    }
+    &__title {
+        font-weight: 400;
+    }
+}
