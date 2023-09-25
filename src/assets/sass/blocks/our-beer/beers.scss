@@ -3,13 +3,14 @@
     margin-bottom: 9.9rem;
     &__wrap {
         display: flex;
+        justify-content: flex-start;
         flex-wrap: wrap;
         row-gap: 6.6rem;
         margin: 0 -1.5rem;
     }
     &__item {
-        margin: 0 1.5rem;
-        flex: 1 1 calc(25% - 3rem);
+        padding: 0 1.5rem;
+        flex: 0 0 calc(25% - 3rem);
     }
     &__img {
         position: relative;
