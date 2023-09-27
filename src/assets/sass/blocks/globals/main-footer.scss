@@ -16,7 +16,13 @@
   &__row {
     flex: 1;
     border: 2px solid var(--accent);
+    &:last-child {
+      @media screen and (max-width: 1200px) {
+        min-height: 30rem;
+      }
+    }
   }
+
   &__form {
     flex: 1;
     border: 2px solid var(--accent);

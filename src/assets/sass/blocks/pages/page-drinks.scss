@@ -1,5 +1,8 @@
 .page-drinks {
     header {
         margin-bottom: 7.1rem;
+        @media screen and (max-width: 576px) {
+            margin-bottom: 5rem;
+        }
     }
 }

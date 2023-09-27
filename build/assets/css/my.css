@@ -242,17 +242,6 @@ input[type="submit"]:disabled {
   display: none;
 }
 
-@keyframes a1 {
-  to {
-    opacity: 0;
-    min-height: 0;
-    min-width: 0;
-    padding: 0;
-    margin: 0;
-    border: 0;
-  }
-}
-
 .link {
   color: var(--accent);
   font-size: 1.6rem;
@@ -516,6 +505,12 @@ input[type="submit"]:disabled {
 .main-footer__row {
   flex: 1;
   border: 2px solid var(--accent);
+}
+
+@media screen and (max-width: 1200px) {
+  .main-footer__row:last-child {
+    min-height: 30rem;
+  }
 }
 
 .main-footer__form {
@@ -844,6 +839,12 @@ input[type="submit"]:disabled {
 
 .page-drinks header {
   margin-bottom: 7.1rem;
+}
+
+@media screen and (max-width: 576px) {
+  .page-drinks header {
+    margin-bottom: 5rem;
+  }
 }
 
 .home-intro {
@@ -1410,12 +1411,50 @@ input[type="submit"]:disabled {
   gap: 4.3rem;
 }
 
+@media screen and (max-width: 1200px) {
+  .filter-drinks__wrap {
+    display: block;
+  }
+}
+
 .filter-drinks__aside {
-  min-width: 42rem;
+  width: 25%;
+}
+
+@media screen and (max-width: 1200px) {
+  .filter-drinks__aside {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .filter-drinks__list {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .filter-drinks__list {
+    flex-wrap: wrap;
+  }
 }
 
 .filter-drinks__category {
   position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .filter-drinks__category {
+    flex: 0 0 50%;
+  }
+}
+
+.filter-drinks__category img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .filter-drinks__category span {
@@ -1424,6 +1463,12 @@ input[type="submit"]:disabled {
   bottom: 1rem;
   display: block;
   font-weight: 400;
+}
+
+@media screen and (max-width: 1200px) {
+  .filter-drinks__category span {
+    font-size: 2.2rem;
+  }
 }
 
 .filter-drinks__category:hover {
@@ -1442,9 +1487,27 @@ input[type="submit"]:disabled {
   margin: 0 -1.5rem;
 }
 
+@media screen and (max-width: 576px) {
+  .filter-drinks__items {
+    row-gap: 4rem;
+  }
+}
+
 .filter-drinks__item {
   margin: 0 1.5rem;
   flex: 0 0 calc(100% / 3 - 3rem);
+}
+
+@media screen and (max-width: 768px) {
+  .filter-drinks__item {
+    flex: 0 0 calc(100% / 2 - 3rem);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .filter-drinks__item {
+    flex: 0 1 100%;
+  }
 }
 
 .filter-drinks__img {
