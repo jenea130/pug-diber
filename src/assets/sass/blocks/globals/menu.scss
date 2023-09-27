@@ -22,7 +22,9 @@
       }
     }
     a {
-      &:hover {
+      transition: all 1s;
+      &:hover,
+      &.active {
         font-weight: 700;
         color: white;
       }

@@ -370,7 +370,11 @@ input[type="submit"]:disabled {
   }
 }
 
-.menu__list a:hover {
+.menu__list a {
+  transition: all 1s;
+}
+
+.menu__list a:hover, .menu__list a.active {
   font-weight: 700;
   color: white;
 }
