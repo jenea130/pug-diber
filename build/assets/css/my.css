@@ -1557,11 +1557,12 @@ input[type="submit"]:disabled {
   }
 }
 
-.filter-drinks__category:hover {
+.filter-drinks__category:hover, .filter-drinks__category.active {
   border: 2px solid var(--accent);
 }
 
-.filter-drinks__category:hover span {
+.filter-drinks__category:hover span,
+.filter-drinks__category.active span {
   color: var(--accent);
 }
 

@@ -4,9 +4,9 @@ import filterBeer from "./modules/filterBeer";
 import toggleMenu from "./modules/header/toggleMenu";
 
 window.addEventListener("DOMContentLoaded", function () {
-  console.log("some thing for me");
   toggleMenu();
   streetMap();
   filterBeer();
+  console.log("some thing for me");
   filterDrinks();
 });
