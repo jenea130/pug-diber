@@ -6,7 +6,7 @@ export default function modalContent() {
 
   if (!localStorage.getItem("modal_content")) {
     setTimeout(() => {
-      modal_content.classList.add("active");
+      showPopup();
     }, 2000);
   }
 
@@ -28,8 +28,10 @@ export default function modalContent() {
 
   function closePopup() {
     modal_content.classList.remove("active");
+    document.querySelector("body").style.overflow = "unset";
   }
   function showPopup() {
+    document.querySelector("body").style.overflow = "hidden";
     modal_content.classList.add("active");
   }
   function goToGoogle() {
