@@ -867,6 +867,118 @@ input[type="submit"]:disabled {
   }
 }
 
+.modal-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  display: none;
+  width: 94.7rem;
+  padding: 7.4rem 6rem 5.3rem;
+  background: #000;
+  border: 2px solid var(--accent);
+}
+
+.modal-content__logo {
+  position: relative;
+  margin-bottom: 8rem;
+}
+
+.modal-content__logo::after {
+  content: "";
+  position: absolute;
+  bottom: -4.9rem;
+  left: 0;
+  width: 100%;
+  height: 0.3rem;
+  background: var(--accent);
+}
+
+.modal-content__wrap {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 3.1rem;
+}
+
+.modal-content__wrap span {
+  display: inline-block;
+  margin-right: auto;
+  font-size: 4.8rem;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: -0.048rem;
+}
+
+.modal-content__btn {
+  margin-bottom: 2.6rem;
+  margin-left: 1.1rem;
+  padding: 1rem 5rem;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  background: var(--accent);
+}
+
+.modal-content__checkbox {
+  display: none;
+}
+
+.modal-content__checkbox:checked + label:after {
+  opacity: 1;
+}
+
+.modal-content__privacy label {
+  position: relative;
+  padding-left: 4rem;
+  display: block;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.modal-content__privacy label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1rem;
+  width: 1.9rem;
+  height: 1.9rem;
+  border: 1px solid var(--accent);
+  border-radius: 0.4rem;
+  background: black;
+}
+
+.modal-content__privacy label::after {
+  content: "";
+  position: absolute;
+  top: 0rem;
+  left: 1rem;
+  width: 2rem;
+  height: 1.3rem;
+  background: url("../i/svg/icon-check.svg") no-repeat center;
+  background-size: 60%;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.modal-content__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
 .page-contacts .header {
   margin-bottom: 6.4rem;
 }
@@ -1770,8 +1882,7 @@ input[type="submit"]:disabled {
   }
 }
 
-.company__text::after {
-  content: "www.paulaner.it";
+.company__after {
   position: absolute;
   top: 0;
   left: 88rem;
@@ -1783,7 +1894,7 @@ input[type="submit"]:disabled {
 }
 
 @media screen and (max-width: 1200px) {
-  .company__text::after {
+  .company__after {
     top: 100%;
     left: 0;
   }

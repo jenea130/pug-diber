@@ -1,0 +1,102 @@
+.modal-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  display: none;
+  width: 94.7rem;
+  padding: 7.4rem 6rem 5.3rem;
+  background: #000;
+  border: 2px solid var(--accent);
+  &__logo {
+    position: relative;
+    margin-bottom: 8rem;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -4.9rem;
+      left: 0;
+      width: 100%;
+      height: 0.3rem;
+      background: var(--accent);
+    }
+  }
+  &__wrap {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 3.1rem;
+    span {
+      display: inline-block;
+      margin-right: auto;
+      font-size: 4.8rem;
+      font-weight: 400;
+      color: #fff;
+      letter-spacing: -0.048rem;
+    }
+  }
+  &__btn {
+    margin-bottom: 2.6rem;
+    margin-left: 1.1rem;
+    padding: 1rem 5rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background: var(--accent);
+  }
+
+  &__checkbox {
+    display: none;
+  }
+  &__checkbox:checked + label:after {
+    opacity: 1;
+  }
+  &__privacy label {
+    position: relative;
+    padding-left: 4rem;
+    display: block;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1;
+    cursor: pointer;
+  }
+  &__privacy label::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1rem;
+    width: 1.9rem;
+    height: 1.9rem;
+    border: 1px solid var(--accent);
+    border-radius: 0.4rem;
+    background: black;
+  }
+
+  &__privacy label::after {
+    content: "";
+    position: absolute;
+    top: 0rem;
+    left: 1rem;
+    width: 2rem;
+    height: 1.3rem;
+    background: url("../i/svg/icon-check.svg") no-repeat center;
+    background-size: 60%;
+    opacity: 0;
+    transition: all 0.4s;
+  }
+  &__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
