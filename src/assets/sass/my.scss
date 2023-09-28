@@ -6,6 +6,7 @@
 
 // mixins
 @import "blocks/mixins/link";
+@import "blocks/mixins/b-link";
 
 // globals
 @import "blocks/globals/sandwich";
@@ -20,6 +21,7 @@
 @import "blocks/pages/page-contacts";
 @import "blocks/pages/page-drinks";
 @import "blocks/pages/page-our-beer";
+@import "blocks/pages/page-company";
 
 @import "blocks/home/home-intro";
 @import "blocks/home/craft-beers";
@@ -31,5 +33,6 @@
 @import "blocks/about/about-block";
 @import "blocks/our-beer/filter-beer";
 @import "blocks/drinks/filter-drinks";
+@import "blocks/single-page/company";
 
 

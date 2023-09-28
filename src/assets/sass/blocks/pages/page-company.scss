@@ -1,0 +1,8 @@
+.page-company {
+    .header {
+        margin-bottom: 11rem;
+        @media screen and (max-width: 992px) {
+            margin-bottom: 7rem;
+        }
+    }
+}

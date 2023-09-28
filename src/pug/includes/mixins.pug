@@ -4,5 +4,10 @@ mixin icon(icon, location)
 
 mixin link(text, href = "#")
   a(href=href).link= text
-      .link__icon
-          .link__arrow
+    .link__icon
+      .link__arrow
+
+mixin b-link(text, href = "#")
+  .b-link__icon
+    .b-link__arrow
+  a(href=href).b-link= text
