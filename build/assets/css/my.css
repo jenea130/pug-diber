@@ -880,6 +880,10 @@ input[type="submit"]:disabled {
   border: 2px solid var(--accent);
 }
 
+.modal-content.active {
+  display: block;
+}
+
 .modal-content__logo {
   position: relative;
   margin-bottom: 8rem;

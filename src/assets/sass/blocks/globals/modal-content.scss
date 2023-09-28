@@ -9,6 +9,9 @@
   padding: 7.4rem 6rem 5.3rem;
   background: #000;
   border: 2px solid var(--accent);
+  &.active {
+    display: block;
+  }
   &__logo {
     position: relative;
     margin-bottom: 8rem;
