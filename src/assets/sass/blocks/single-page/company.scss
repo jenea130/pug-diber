@@ -11,7 +11,7 @@
     }
   }
   &__logo {
-    padding: 0 11.3rem 0 9rem;
+    padding: 0 11.3rem 0 7.9rem;
     @media screen and (max-width: 1500px) {
       padding: 0 9rem 0 7rem;
     }
@@ -29,7 +29,7 @@
     flex: 1;
   }
   &__title {
-    margin-bottom: 2.8rem;
+    margin-bottom: 4rem;
     max-width: 83.6rem;
     font-size: 4.8rem;
     font-weight: 400;
@@ -43,7 +43,7 @@
   }
   &__text {
     position: relative;
-    margin-bottom: 3.6rem;
+    margin-bottom: 5.8rem;
     max-width: 83.6rem;
     font-size: 1.6rem;
     font-weight: 400;
@@ -84,12 +84,12 @@
     }
   }
   &__list {
-    padding: 5.5rem;
+    padding: 5.1rem 1.8rem 4rem 5.8rem;
     max-width: 85.7rem;
     column-count: 2;
     border: 2px solid var(--accent);
     li {
-      margin-bottom: 1rem;
+      margin-bottom: 1.6rem;
     }
     @media screen and (max-width: 992px) {
       max-width: 100%;
