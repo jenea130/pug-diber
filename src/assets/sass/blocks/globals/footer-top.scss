@@ -1,11 +1,11 @@
 .footer-top {
-  padding: 7.9rem 6.7rem 5.4rem 4.9rem;
+  padding: 7.4rem 6.7rem 5.1rem 4.9rem;
   @media screen and (max-width: 768px) {
     padding: 5rem 5rem 4rem 4rem;
   }
   &__wrap {
     display: flex;
-    gap: 6.3rem;
+    gap: 6rem;
     @media screen and (max-width: 768px) {
       display: block;
     }
@@ -23,8 +23,8 @@
   &__row {
     display: flex;
     align-items: center;
-    gap: 3.6rem;
-    margin-bottom: 3.7rem;
+    gap: 4rem;
+    margin-bottom: 3.5rem;
     &:last-child {
       margin-bottom: 0;
     }
@@ -75,7 +75,7 @@
     justify-content: space-between;
   }
   &__title {
-    margin-bottom: 5.6rem;
+    margin-bottom: 5rem;
     font-weight: 400;
     color: var(--accent);
   }

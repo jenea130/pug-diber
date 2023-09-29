@@ -10,15 +10,17 @@
     padding: 4rem 3rem 4rem 3rem;
   }
   &__title {
-    margin-bottom: 5.7rem;
+    margin-bottom: 4.6rem;
     font-weight: normal;
     color: var(--accent);
   }
-
+  &__group:not(:nth-of-type(4)) {
+    margin-bottom: 3.5rem;
+  }
   input[type="text"],
   input[type="email"],
   textarea {
-    margin-bottom: 2rem;
+    // margin: 0;
     padding: 2rem 2rem 2rem 0;
     font-size: 2rem;
     color: white;
@@ -36,6 +38,7 @@
   }
   &__group label {
     margin-bottom: 1rem;
+    display: block;
     font-size: 1.2rem;
     font-weight: 400;
     line-height: normal;
@@ -46,6 +49,12 @@
   &__wrap {
     display: flex;
     align-items: center;
+    @media screen and (max-width: 1400px) {
+      display: block;
+    }
+    @media screen and (max-width: 1200px) {
+      display: flex;
+    }
     @media screen and (max-width: 450px) {
       display: block;
     }
@@ -53,7 +62,7 @@
 
   &__btn {
     margin-right: 3rem;
-    padding: 0.5rem 4rem;
+    padding: 2.3rem 5.3rem;
     min-height: 6rem;
     background: var(--accent);
     color: #000;
@@ -67,6 +76,9 @@
       background: #004c72;
       color: white;
     }
+    @media screen and (max-width: 1400px) {
+      margin-bottom: 2rem;
+    }
     @media screen and (max-width: 450px) {
       margin-bottom: 2rem;
     }
@@ -75,7 +87,7 @@
     display: none;
   }
   &__checkbox:checked + label:after {
-    opacity: 1;
+      opacity: 1;
   }
   &__privacy label {
     position: relative;
@@ -90,12 +102,12 @@
   &__privacy label::before {
     content: "";
     position: absolute;
-    top: -0.1rem;
-    // top: 50%;
-    left: 0;
-    width: 1.7rem;
-    height: 1.7rem;
-    border: 1px solid white;
+    top: 50%;
+    left: -0.5rem;
+    transform: translateY(-50%);
+    width: 1.9rem;
+    height: 1.9rem;
+    border: 1px solid var(--accent);
     border-radius: 0.4rem;
     background: black;
   }
@@ -103,18 +115,14 @@
   &__privacy label::after {
     content: "";
     position: absolute;
-    top: 0.3rem;
-    left: 0.3rem;
-    width: 1.2rem;
-    height: 0.8rem;
+    top: 50%;
+    left: -0.2rem;
+    transform: translateY(-50%);
+    width: 1.4rem;
+    height: 1rem;
     background: url("../i/svg/icon-check.svg") no-repeat center;
+    background-size: 90%;
     opacity: 0;
     transition: all 0.4s;
-    @media screen and (max-width: 1200px) {
-      top: 0.2rem;
-      left: 0.3rem;
-      width: 1.2rem;
-      height: 1rem;
-    }
   }
 }

@@ -39,8 +39,9 @@ body::after {
   left: 50%;
   width: 1px;
   height: 100vh;
-  background: blue;
-  display: none;
+  background: green;
+  display: block;
+  z-index: 1;
 }
 input,
 button,
