@@ -1683,7 +1683,7 @@ input[type="submit"]:disabled {
 
 .filter-drinks__wrap {
   display: flex;
-  gap: 4.3rem;
+  gap: 5rem;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1734,8 +1734,8 @@ input[type="submit"]:disabled {
 
 .filter-drinks__category span {
   position: absolute;
-  left: 1rem;
-  bottom: 1rem;
+  left: 2.5rem;
+  bottom: 2.3rem;
   display: block;
   font-weight: 400;
 }
@@ -1756,10 +1756,10 @@ input[type="submit"]:disabled {
 }
 
 .filter-drinks__items {
-  flex: 1;
+  flex: 0 0 76.2%;
   display: flex;
   flex-wrap: wrap;
-  row-gap: 6.6rem;
+  row-gap: 4.3rem;
   margin: 0 -1.5rem;
 }
 
@@ -1803,7 +1803,7 @@ input[type="submit"]:disabled {
 }
 
 .filter-drinks__title {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   font-weight: 400;
 }
 
